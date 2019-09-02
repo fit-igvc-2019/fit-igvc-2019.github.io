@@ -1,0 +1,19 @@
+#+TITLE: IGVC Project
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="/style/main.css"/>
+
+Project Name: IGVC - Intelligent Ground Vehicle Competition
+
+Team members: Viet Dung Nguyen ([[mailto:dnguyen2016@my.fit.edu][dnguyen2016@my.fit.edu]])
+
+Faculty Sponsor: Dr. Marius Silaghi
+
+* First Semester
+| Plan(Sep4)           | Plan, Presentation                                           |
+| Milestone 1 (Sep 30) | Requirement, Design, Test, Presentation, Progress Evaluation |
+| Milestone 2 (Oct 28) | Presentation, Progress Evaluation                            |
+| Milestone 3 (Nov 25) | Presentation, Progress Evaluation                            |
+* Second Semester
+| Plan (Jan 22)        | Plan, Presentation                                         |
+| Milestone 4 (Feb 17) | Presentation, Progress Evaluation                          |
+| Milestone 5 (Mar 23) | Poster, e-book page, Presentation, Progress Evaluation     |
+| Milestone 6 (Apr 20) | User Manual, Demo Video, Presentation, Progress Evaluation |

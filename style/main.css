@@ -1,0 +1,36 @@
+body {
+    background-color: #fefefe;
+    font-family: 'PT Serif',Georgia,Cambria,'Times New Roman',Times,serif;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+#content {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#postamble {
+    display: none;
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+td, th {
+    text-align: left;
+    padding: 1rem;
+    vertical-align: top;
+    border-top: 1px solid rgba(0,0,0,.045);
+}
+
+tbody>tr:nth-of-type(odd) {
+ background-color:rgba(0,0,0,.05)
+}
+
+[class^="section-number-"] {
+    display: none;
+}
