@@ -44,18 +44,18 @@ collected from lane detection and obstacles detection.
 - Team members have no experience with Arduino.
 * Milestone 1:
 - Examine the options available for each features.
-- Implement automated testing.
 - Establish best practices for code.
 - Examine the legacy code in order to reuse.
 - Create requirement document
 - Create design document
 - Create test plan
 * Milestone 2:
+- Implement automated testing.
 - Refactor the legacy code.
 - Test for regression.
 * Milestone 3:
 - Implement and test motion planning.
-* Approval from Faculty Sponsor: :noexport:
+* Approval from Faculty Sponsor:
 - I have discussed with the team and approve this project plan. I will evaluate the progress and assign a grade for each of the three milestones."
 
 
