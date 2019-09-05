@@ -59,6 +59,6 @@ collected from lane detection and obstacles detection.
 - I have discussed with the team and approve this project plan. I will evaluate the progress and assign a grade for each of the three milestones."
 
 
-\hspace{1cm}
+\vspace{1.5cm}
 \par\noindent\makebox[2.5in]{\hrulefill} \hfill\makebox[2.0in]{\hrulefill}
 \par\noindent\makebox[2.5in][l]{Signature}      \hfill\makebox[2.0in][l]{Date}

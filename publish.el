@@ -21,6 +21,8 @@
 
 (setq org-export-with-toc nil)
 
+(setq org-export-with-date nil)
+
 (setq
  org-publish-project-alist
  `(("pdf"
