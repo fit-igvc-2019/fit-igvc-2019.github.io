@@ -3,7 +3,13 @@
 
 Project Name: IGVC - Intelligent Ground Vehicle Competition
 
-Team members: Viet Dung Nguyen ([[mailto:dnguyen2016@my.fit.edu][dnguyen2016@my.fit.edu]])
+Team members:
+- Viet Dung Nguyen ([[mailto:dnguyen2016@my.fit.edu][dnguyen2016@my.fit.edu]])
+- Jinwen Zhang ([[mailto:jzhang2015@my.fit.edu][jzhang2015@my.fit.edu]])
+- John Light ([[mailto:jlight2016@my.fit.edu][jlight2016@my.fit.edu]])
+- Sijin Yang ([[mailto:yangs2017@my.fit.edu][yangs2017@my.fit.edu]])
+- Peter Tarsoly ([[mailto:ptarsoly2016@my.fit.edu][ptarsoly2016@my.fit.edu]])
+
 
 Faculty Sponsor: Dr. Marius Silaghi
 
