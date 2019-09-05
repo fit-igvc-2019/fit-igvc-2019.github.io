@@ -40,4 +40,4 @@
 
 (org-publish-all)
 
-(shell-command (concat "bash " default-directory "cleanup.sh"))
+(shell-command (format "find %s -type f -not -iname \"*org\" -exec rm {} \\;" org-dir))
