@@ -14,6 +14,14 @@
   (concat default-directory "html/"))
 
 (setq
+ org-publish-timestamp-directory
+ (concat default-directory ".timestamps/"))
+
+(setq make-backup-files nil)
+
+(setq org-export-with-toc nil)
+
+(setq
  org-publish-project-alist
  `(("pdf"
     :base-directory ,pdf-dir
