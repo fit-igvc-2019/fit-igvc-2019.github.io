@@ -23,29 +23,33 @@ The key features of the software components are:
 - Mapping
 - Motion planning
 
-Lane detection is necessary for the robot to follow lane specified in the
-competition.
+The robot must be able to follow the path specified by the competition. The
+boundary of this path will be illustrated by dashed or continuous white lines.
+Lane detection is necessary for the robot to detect these boundaries.
 
-Obstacle detection and avoidance allow the robot to detect and move around
-obstacles in the path.
+Within the course, there will be natural and artificial obstacbles. Obstacle
+detection and avoidance allow the robot to detect obstacbles and move around
+them. Avoiding obstacles is a key factor of the competition.
 
-Mapping let the robot remember the positions of the obstacles and where it has
-been. This feature is necessary to ensure that the robot won't backtrack. With
-mapping, the robot can also navigating through previous obstacles without
-detection.
+Mapping let the robot construct a virtual map of the obstacle course using the
+data from lane detection and obstacle detection. With mapping, the robot can
+remember the collected data and avoid redundant data collection. In addition,
+the robot can remember the where it has been and avoid backtracking.
 
-Motion planning is a crucial feature of the robot. With the starting
-configuration, the robot must find the shortest path to the goal from data
-collected from lane detection and obstacles detection.
+Motion planning is a crucial feature of the robot. Using motion planning, the
+robot can construct the shortest path to the checkpoints from the data
+illustrated in the map. Efficient motion planning is essential for finishing the
+course in time.
 
 * Technical Challenges:
 - Legacy code is not well documented.
-- Some features are not implemented currently.
+- Motion planning is not implemented
 - Team members have no experience with Arduino.
+- Team members have no experience with lane and obstacble detection.
 * Milestone 1:
-- Examine the options available for each features.
-- Establish best practices for code.
 - Examine the legacy code in order to reuse.
+- Examine the options available for motion planning.
+- Establish best practices (code format, document style) for the project.
 - Create requirement document
 - Create design document
 - Create test plan

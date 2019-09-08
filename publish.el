@@ -8,14 +8,10 @@
   (concat default-directory "org/"))
 
 (setq
- org-publish-timestamp-directory
- (concat default-directory ".timestamps/"))
-
-(setq make-backup-files nil)
-
-(setq org-export-with-toc nil)
-
-(setq org-export-with-date nil)
+ org-publish-timestamp-directory (concat default-directory ".timestamps/")
+ make-backup-files nil
+ org-export-with-toc nil
+ org-export-with-date nil)
 
 (setq
  org-publish-project-alist
@@ -40,4 +36,4 @@
 
 (org-publish-all)
 
-(shell-command (format "find %s -type f -not -iname \"*org\" -exec rm {} \\;" org-dir))
+(shell-command (format "find %s -type f -not -iname \"*org\" -exec rm '{}' \\;" org-dir))
