@@ -1,4 +1,4 @@
-#+TITLE: Project Plan
+#+TITLE: IGVC Project Plan
 * General Information
 1. Project Name: IGVC - Intelligent Ground Vehicle Competition
 2. Team members:
