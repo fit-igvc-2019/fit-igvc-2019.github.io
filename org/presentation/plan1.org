@@ -59,3 +59,4 @@ course in time.
 - Test for regression.
 * Milestone 3:
 - Implement and test motion planning.
+* Questions?

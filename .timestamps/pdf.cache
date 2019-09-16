@@ -1,0 +1,5 @@
+(setq org-publish-cache (make-hash-table :test 'equal :weakness nil :size 100))
+(puthash ":project:" "pdf" org-publish-cache)
+(puthash ":cache-file:" "/home/dvn196/projects/fit-igvc-2019.github.io/.timestamps/pdf.cache" org-publish-cache)
+(puthash "/home/dvn196/projects/fit-igvc-2019.github.io/org/pdf/plan1.org" '(:crossrefs (((other "Approval" "from" "Faculty" "Sponsor:") . 88698138) ((headline "Approval" "from" "Faculty" "Sponsor:") . 88698138) ((other "Milestone" "3:") . 30785814) ((headline "Milestone" "3:") . 30785814) ((other "Milestone" "2:") . 107346045) ((headline "Milestone" "2:") . 107346045) ((other "Milestone" "1:") . 174237860) ((headline "Milestone" "1:") . 174237860) ((other "Technical" "Challenges:") . 51343465) ((headline "Technical" "Challenges:") . 51343465) ((other "Approach:") . 262878140) ((headline "Approach:") . 262878140) ((other "Goal" "and" "Motivation") . 7804521) ((headline "Goal" "and" "Motivation") . 7804521) ((other "General" "Information") . 200171759) ((headline "General" "Information") . 200171759)) :index nil) org-publish-cache)
+(puthash "X77f8d3078b209b0747a6a402c81ec9831642e7d0" 1567977319 org-publish-cache)
