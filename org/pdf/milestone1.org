@@ -1,0 +1,74 @@
+#+TITLE: Milestone 1 Progress Evaluation
+* General Information
+1. Project Name: IGVC - Intelligent Ground Vehicle Competition
+2. Team members:
+   - Viet Dung Nguyen (CSE) ([[mailto:dnguyen2016@my.fit.edu][dnguyen2016@my.fit.edu]])
+   - Jinwen Zhang ([[mailto:jzhang2015@my.fit.edu][jzhang2015@my.fit.edu]])
+   - John Light ([[mailto:jlight2016@my.fit.edu][jlight2016@my.fit.edu]])
+   - Sijin Yang ([[mailto:yangs2017@my.fit.edu][yangs2017@my.fit.edu]])
+   - Peter Tarsoly ([[mailto:ptarsoly2016@my.fit.edu][ptarsoly2016@my.fit.edu]])
+3. Faculty Sponsor: Dr. Marius Silaghi ([[mailto:msilaghi@fit.edu][msilaghi@fit.edu]])
+4. Client: Dr. Ken Gibbs
+5. Meetings with the Client:
+   - 09/13/2019
+6. Date of meeting faculty sponsor:
+
+* Task matrix
+| Task                                | Completion % | Viet Dung | To do                |
+|-------------------------------------+--------------+-----------+----------------------|
+| Create test plan                    |          100 |       100 | None                 |
+| Create requirement document         |          100 |       100 | None                 |
+| Create design document              |          100 |       100 | None                 |
+| Establish best practice             |          100 |       100 | None                 |
+| Examine legacy code                 |           50 |        50 | Test the legacy code |
+| Examine options for motion planning |           50 |        50 | Decide the algorithm |
+* Task Discussion:
+- Create test plan
+  + The team was able to write the verification plan for each functions of the robot.
+- Create requirement document
+  + The team was able to write the software specification for the project.
+- Create design document
+  + The team was able to list the modules of the robot and the control flow.
+- Establish best practice
+  + The team chose C++ and Python for the project's software.
+  + The team was able to chose tools for enforcing the code standard
+- Examine legacy code
+  + The team has read the code but was unable to test it at the moment due to
+    the conditions of the hardware.
+- Examine options for motion planning
+  + The team has gather knowledge about motion planning. The algorithm will be
+    decided after verifying other software functions.
+
+* Contribution Discussion:
+- Viet Dung Nguyen
+  + Read the legacy code and learn more about machine learning. Find the tools
+    for managing the software standard.
+* Plan for next milestone:
+- Test the legacy code
+  + Find the replacement parts for the robot to make it functional and test the
+    code from last year project.
+- Implement and test obstacle and/or lane detection
+  + Read the document on ZED camera and write ROS node(s) for detection functions.
+\newpage
+* Faculty Sponsor feedback on each task for the current milestone:
+- Task 1
+  \vspace{2.5cm}
+- Task 2
+  \vspace{2.5cm}
+- Task 2.5
+  \vspace{2.5cm}
+- Task 4
+  \vspace{2.5cm}
+- Task 5
+  \vspace{2.5cm}
+- Task 6
+  \vspace{3.5cm}
+\par\noindent\makebox[2.5in]{\hrulefill} \hfill\makebox[2.0in]{\hrulefill}
+\par\noindent\makebox[2.5in][l]{Signature}      \hfill\makebox[2.0in][l]{Date}
+\newpage
+* Faculty Sponsor evaluation:
+| Viet Dung Nguyen | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
+
+\vspace{1.5cm}
+\par\noindent\makebox[2.5in]{\hrulefill} \hfill\makebox[2.0in]{\hrulefill}
+\par\noindent\makebox[2.5in][l]{Signature}      \hfill\makebox[2.0in][l]{Date}

@@ -1,0 +1,29 @@
+#+TITLE: Milestone 1
+* Requirements Document
+- Explain the specification of the robot according to the rule of the
+  competition.
+- Describe and list the expected input and output of each software components.
+* Design Document
+- List the subsystems of the robot and demonstrate the data flow.
+  #+ATTR_LATEX: :width 5cm
+  [[../../static/design-diagram.png]]
+* Testing Document
+- List the test cases for each subsystem.
+  - Independent testing
+  - System testing
+* Establish best practices
+- The team chose C++ and Python for the project's software.
+- The team was able to chose tools for enforcing the code standard.
+* Examine the legacy code
+- Read and examine the code from last year project.
+- Unable to test it due to hardware condition.
+* Examine options for motion planning
+- The team was able to learn more about motion planning.
+- Motion planning algorithm will be chosen after implementing and testing other functions.
+* Milestone 2
+- Test the legacy code
+  + Find the replacement parts for the robot to make it functional and test the
+    code from last year project.
+- Implement and test obstacle and/or lane detection
+  + Read the document on ZED camera and write ROS node(s) for detection functions.
+* Question?

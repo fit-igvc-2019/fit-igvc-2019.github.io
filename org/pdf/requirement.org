@@ -1,0 +1,101 @@
+#+TITLE: Requirement Document
+
+* Introduction
+** System purpose:
+The purpose of the system is to traverse the Auto-Nav Challenge course at the
+2020 Intelligent Ground Vehicle Competition. The system will traverse a course
+defined by white-painted lanes and various obstacles.
+
+** System scope:
+This specification establishes the functional, performance, interface and
+verification requirements for the Florida Institute of Technology Capstone
+Program, IGVC Robot. The IGVC Robot shall have the capabilities to qualify and
+compete in the 2020 Intelligent Ground Vehicle Competition Auto-Nav Challenge.
+
+** Definitions:
+- Obstacles :: Traffic barrels and similar roadwork barriers, artificial
+  potholes, trees, shrubs, light posts and other man made objects.
+- Robot :: The autonomous vehicle (system) which will be completing the course.
+- Course :: The area in which the robot will traverse. The course distance will
+  be 600 feet, constrained within a rectangular area of 100 by 200 feet.
+- Lanes :: The space on the course the robot must travel within; this is
+  commonly referred to as the Track in the Auto-Nav competition rules. It is
+  defined by white dashed or solid lines that are approximately 3 inches wide
+  and painted on grass. The width of the lane is constrained from 10 to 20 feet
+  wide, with a turn radius not less than 5 feet.
+
+** References:
+Igvc.org. (2019). [online] Available at: http://www.igvc.org/2019rules.pdf [Accessed 23 Sep. 2019].
+
+** Functions overview:
+- Lane Detection :: The robot shall follow the path specified by the Auto-Nav
+  competition. The boundary of this path will be illustrated by dashed or
+  continuous white lines, known as lanes. Lane detection is necessary for the
+  robot to detect these boundaries.
+- Obstacle Detection :: Throughout the course, there shall be natural and
+  artificial obstacles. Obstacle detection and avoidance allow the robot to
+  detect obstacles and move around them.
+- Mapping :: The robot shall possess the ability to map the environment using
+  the data from lane detection and obstacle detection. Predefined GPS waypoints
+  shall be marked on the map.
+- Path Planning :: Using motion planning, the robot shall construct the shortest
+  path to the checkpoints using known data from detection.
+
+* Performance requirements:
+- The robot shall maintain an average speed above 1 MPH while completing the
+  course and any challenges.
+- The robot shall not exceed a speed of 5 MPH while on the course or during any
+  challenges throughout the competition.
+- The robot shall be able to carry a 20 pound payload while completing the
+  course. If the payload falls from the robot, the run will be ended.
+- The robot shall be able to travel with its payload on natural and artificial
+  inclines with gradients not exceeding 15%.
+- The robot shall avoid obstacles and stay within the lanes to complete the
+  course without penalty.
+- While completing the course, the robot may stop for a consecutive maximum of
+  one minute.
+- The robot shall be able to safely function in light rain or drizzle.
+
+* Functions:
+** Lane Detection:
+*** Description:
+- A Zed camera shall be used to capture images of the the environment in order
+  to collect data for the subsystem.
+- The robot shall detect lane using a computer vision technique and/or a Neural
+  Network.
+*** Input:
+- The input will be the images captured from the camera.
+*** Output:
+- The output will be the position and outline of the lane
+** Obstacle Detection:
+*** Description:
+- A Zed camera shall be used to capture images of the the environment in order
+  to collect data for the subsystem.
+- The robot may collect distances from obstacles using a device such as LiDAR.
+- A Neural Network and/or sensor fusion technique shall be used to find
+  obstacles location relative to the robot.
+*** Input:
+- The input will be the data collected from the Zed camera and sensors.
+*** Output:
+- The output will be the positions and sizes of the obstacles.
+** Mapping:
+*** Description:
+- The robot shall be capable of mapping the obstacle course in order to find the
+  path to specified waypoints.
+- The robot shall continuously map the course using data from lane detection and
+  obstacle detection.
+*** Input:
+- The input will the output provided by the Lane Detection and Obstacle
+  Detection subsystem. Predefined GPS waypoints will be provided by the user.
+*** Output:
+- The subsystem will create a gradually generated map of the obstacle map. The
+  map will contain the positions of the robot, the obstacles, the lanes and
+  waypoints.
+** Path planning:
+*** Description:
+- Using probabilistic motion planning, the robot will plan the shortest path to
+  the waypoints using the data collected.
+*** Input:
+- The input will be the map provided by the Mapping subsystem.
+*** Output:
+- The output will be the path the robot will travel in the obstacle course.

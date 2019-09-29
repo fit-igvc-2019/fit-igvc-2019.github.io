@@ -1,0 +1,35 @@
+#+TITLE: Test Plan
+
+* Verification Overview
+Subsystems that require computer vision or machine learning will first be
+verified in a simulated environment off of the robot. These and the remaining
+functions will be verified within several test environments designed on the
+Florida Tech campus. Environments will include paved and grass areas to assess
+the robot’s movement capabilities. Each system function will be tested
+independently, through unit tests, before system testing occurs. Test courses of
+varying depth and difficulty will be constructed with, but not limited to,
+masking tape, white ribbon, paint, furniture, and cones. Furthermore, data will
+be collected from these test courses to improve simulation testing.
+* Lane Detection
+The lane detection model, and lane following subsystem, will be tested off of
+the robot using collected data. The model will be tested on test courses from
+which additional data will be gathered to improve the model. After the robot can
+reliably detect lanes, the subsystem will be tested concurrently with the
+Obstacle Avoidance subsystem.
+* Obstacle Avoidance
+The obstacle avoidance subsystem will be initially tested off of the robot using
+collected data and simulations. The model will then be tested on test courses,
+from which additional data will be gathered to improve the model. After the
+robot can reliably detect obstacles, the subsystem will be tested concurrently
+with the Lane Following subsystem.
+* Mapping
+The mapping subsystem will be tested independently simulating the outputs from
+the lane detection and obstacle detection submodule. After verifying that the
+mapping module is capable of understanding the input and accurately map objects
+on the virtual map, it will be tested using real input from the detection
+subsystems.
+* Path planning
+Path planning will be tested initially on the robot without other functions. The
+robot will be provided a simple map of the robot and its waypoints' positions.
+After it demonstrates it can successfully traverse to a waypoint, additional
+complexities will be added

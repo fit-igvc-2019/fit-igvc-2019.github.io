@@ -1,0 +1,47 @@
+#+TITLE: Design Document
+
+* Overview
+The purpose of the system is to traverse the Auto-Nav Challenge course at the
+2020 Intelligent Ground Vehicle Competition. The system will traverse a course
+defined by white-painted lanes and various obstacles.
+
+The robot must be capable of:
+- Detecting the lane and travel within track of the competition
+- Detecting and avoiding obstacles
+- Navigating to specified waypoints
+- Traveling as far as possible within limited time.
+
+In order to achive this, the robot must have these modules:
+- Camera and sensors.
+- Images processing:
+  - Lane detection
+  - Obstacle detection
+- Mapping
+- Motion planning
+
+* Modules:
+** Camera and sensors
+This module is responsible for gathering and sending data from the camera and
+sensors.
+** Images processing
+These functions allow the robot to detect elements of the environment using the data from the
+camera and sensors. After processing these elements into a more accessible
+format, the data will be sent to the mapping functions.
+*** Lane detection
+This module allows the robot to recognize the patterns of the lane.
+*** Obstacle detection
+This module allows the robot to detect the position and size of the obstacle.
+** Mapping
+This module will gather the processed data and display them on a virtual map.
+The map will show the positions of the robot, the waypoints, the obstacles and
+the lane.
+** Motion planning
+From the data in the virtual map, the robot will find a path from its
+position to the waypoint. The path will be subjected to change as more data from
+the course is gathered.
+
+After finding a path, this module will control the robot to physically follow
+this path plan.
+
+* Diagram:
+[[../../static/design-diagram.png]]

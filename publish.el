@@ -13,6 +13,20 @@
  org-export-with-toc nil
  org-export-with-date nil)
 
+(setq org-latex-packages-alist '(("margin=2cm" "geometry" nil)))
+
+(setq org-latex-classes
+      '(("beamer" "\\documentclass[presentation]{beamer}"
+         ("\\section{%s}" . "\\section*{%s}")
+         ("\\subsection{%s}" . "\\subsection*{%s}")
+         ("\\subsubsection{%s}" . "\\subsubsection*{%s}"))
+        ("article" "\\documentclass[12pt]{article}"
+         ("\\section{%s}" . "\\section*{%s}")
+         ("\\subsection{%s}" . "\\subsection*{%s}")
+         ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
+         ("\\paragraph{%s}" . "\\paragraph*{%s}")
+         ("\\subparagraph{%s}" . "\\subparagraph*{%s}"))))
+
 (setq
  org-publish-project-alist
  `(("pdf"

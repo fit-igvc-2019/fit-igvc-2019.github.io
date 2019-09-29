@@ -10,7 +10,7 @@
 3. Faculty Sponsor: Dr. Marius Silaghi
 4. Client: Dr. Ken Gibbs
 5. Meetings with the Client:
-   - 06/30/2019
+   - 08/30/2019
 * Goal and Motivation
 The goal of the project is to build an unmanned autonomous robot to compete in
 IGVC in Michigan. The objective of the competition is to have the robot complete
