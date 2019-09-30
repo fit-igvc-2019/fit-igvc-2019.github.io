@@ -1,12 +1,11 @@
 #+TITLE: Milestone 1
 * Requirements Document
 ** Scope
-The rule of the competition:
-
-This specification establishes the functional, performance, interface and
-verification requirements for the Florida Institute of Technology Capstone
-Program, IGVC Robot. The IGVC Robot shall have the capabilities to qualify and
-compete in the 2020 Intelligent Ground Vehicle Competition Auto-Nav Challenge.
+- The rule of the competition:
+  - Navigate through the course, following the lane
+  - Avoid the obstacle
+  - Reach the waypoint
+  - Maintain the speed between 1-5 mph
 * Design Document
 ** Modules
 - Camera and sensors.
