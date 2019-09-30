@@ -1,4 +1,4 @@
-#+TITLE: Milestone 1
+#+TITLE: IGVC Milestone 1
 * Requirements Document
 ** Scope
 - The rule of the competition:
