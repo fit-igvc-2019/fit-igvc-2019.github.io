@@ -1,8 +1,20 @@
 #+TITLE: Milestone 1
 * Requirements Document
-- Explain the specification of the robot according to the rule of the
-  competition.
-- Describe and list the expected input and output of each software components.
+** Scope
+The rule of the competition:
+
+This specification establishes the functional, performance, interface and
+verification requirements for the Florida Institute of Technology Capstone
+Program, IGVC Robot. The IGVC Robot shall have the capabilities to qualify and
+compete in the 2020 Intelligent Ground Vehicle Competition Auto-Nav Challenge.
+* Design Document
+** Modules
+- Camera and sensors.
+- Images processing:
+  - Lane detection
+  - Obstacle detection
+- Mapping
+- Motion planning
 * Design Document
 - List the subsystems of the robot and demonstrate the data flow.
   #+ATTR_LATEX: :width 5cm
@@ -10,7 +22,7 @@
 * Testing Document
 - List the test cases for each subsystem.
   - Independent testing
-  - System testing
+  - System testing / Integration testing.
 * Establish best practices
 - The team chose C++ and Python for the project's software.
 - The team was able to chose tools for enforcing the code standard.
