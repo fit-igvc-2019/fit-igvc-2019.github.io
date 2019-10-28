@@ -1,0 +1,40 @@
+#+TITLE: IGVC Milestone 1
+
+* Implement lane detection
+Using image processing technique, find the lane that the robot must follow.
+[[../../static/lane_results.png]]
+
+* Implement lane detection: Filters
+Combine multiple filters to find the lane
+* RGB Variance:
+Filters the pixels if the 3 color channel is different from each other.
+[[../../static/lane_rgb.png]]
+* Luminance:
+Using the luminance channel in HSL colorspace in order to find brighter area.
+[[../../static/lane_luminance.png]]
+* Implement lane detection: Other image processing technique
+- Using median blur in order to reduce the noise in image while maintaining the edge
+- Using opencv2 morphology in order to fill the small spot
+* Implement lane detection: Drawback
+- The threshold value for the filter must be adjust accordingly to the environment.
+- Currently, the functions cannot differentiate the white paint from the light
+  reflected on the metal surface or other white object.
+- The team is looking into using pattern recognition in order to refine the
+  result.
+* Implement lane detection: Drawback
+  [[../../static/lane_drawback.png]]
+* Implement lane detection: Failed approach
+- Considered using sliding windows and histograms for finding the curve of the
+  lane, but the method is not suitable.
+  #+ATTR_LATEX: :width 3cm
+  [[../../static/sliding_window.png]]
+  #+ATTR_LATEX: :width 3cm
+  [[../../static/histogram.png]]
+* Test lane detection
+Currently, the team is using a script to apply the lane detection to all test
+input and manually checking the result.
+
+* Next milestone
+Implement and test mapping.
+
+* Questions?

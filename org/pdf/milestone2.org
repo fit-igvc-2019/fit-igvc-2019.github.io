@@ -1,0 +1,69 @@
+#+TITLE: Milestone 2 Progress Evaluation
+* General Information
+1. Project Name: IGVC - Intelligent Ground Vehicle Competition
+2. Team members:
+   - Viet Dung Nguyen (CSE) ([[mailto:dnguyen2016@my.fit.edu][dnguyen2016@my.fit.edu]])
+   - Jinwen Zhang ([[mailto:jzhang2015@my.fit.edu][jzhang2015@my.fit.edu]])
+   - John Light ([[mailto:jlight2016@my.fit.edu][jlight2016@my.fit.edu]])
+   - Sijin Yang ([[mailto:yangs2017@my.fit.edu][yangs2017@my.fit.edu]])
+   - Peter Tarsoly ([[mailto:ptarsoly2016@my.fit.edu][ptarsoly2016@my.fit.edu]])
+3. Faculty Sponsor: Dr. Marius Silaghi ([[mailto:msilaghi@fit.edu][msilaghi@fit.edu]])
+4. Client: Dr. Ken Gibbs
+5. Meetings with the Client:
+   - 10/04/2019
+   - 10/11/2019
+   - 10/18/2019
+6. Date of meeting faculty sponsor:
+   - 10/28/2019
+
+* Task matrix
+| Task                     | Completion % | Viet Dung | To do                                      |
+|--------------------------+--------------+-----------+--------------------------------------------|
+| Implement lane detection |           80 |        80 | Improve the accuracy of the lane detection |
+| Test lane detection      |          100 |       100 | None                                       |
+* Task Discussion:
+** Implement lane detection:
+The team use several filters in order to detect the white paint on the photo.
+The first filter is a RGB variance filter, which detect if the values of the R,
+G, and B channell are different from each other. The second filter use the
+luminance channel in HLS colorspace in order to detect spot that are lighter
+than the minimum threshold.
+[[../../static/lane_composite.png]]
+
+The limitation of this approach is that the program cannot distinguish the white
+lane from the bright light reflected on the metal surface of the ramp. In order
+to  address this issue, the team is investigating options for pattern detection
+in order to refine the result.
+[[../../static/lane_drawback.png]]
+
+** Test lane detection:
+An executable script was written to test the filters on test input. The output
+images will display the results of all filters in order to adjust the theirs
+settings.
+
+* Contribution Discussion:
+- Viet Dung Nguyen
+  + Read the legacy code about lane detection
+  + Find more suitable filters for filtering the white paint of the lane
+    boundary in the images
+  + Writing test script
+* Plan for next milestone:
+- Implement and test mapping
+  - The mapping feature will use the data from the detection subsystems, the
+    current position and orientaion of the robot in order to update the map used
+    for path finding.
+\newpage
+* Faculty Sponsor feedback on each task for the current milestone:
+- Task 1
+  \vspace{2.5cm}
+- Task 2
+  \vspace{3.5cm}
+\par\noindent\makebox[2.5in]{\hrulefill} \hfill\makebox[2.0in]{\hrulefill}
+\par\noindent\makebox[2.5in][l]{Signature}      \hfill\makebox[2.0in][l]{Date}
+\newpage
+* Faculty Sponsor evaluation:
+| Viet Dung Nguyen | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
+
+\vspace{1.5cm}
+\par\noindent\makebox[2.5in]{\hrulefill} \hfill\makebox[2.0in]{\hrulefill}
+\par\noindent\makebox[2.5in][l]{Signature}      \hfill\makebox[2.0in][l]{Date}

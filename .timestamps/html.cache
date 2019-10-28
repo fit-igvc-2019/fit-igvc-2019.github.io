@@ -2,4 +2,4 @@
 (puthash ":project:" "html" org-publish-cache)
 (puthash ":cache-file:" "/home/dvn196/projects/fit-igvc-2019.github.io/.timestamps/html.cache" org-publish-cache)
 (puthash "/home/dvn196/projects/fit-igvc-2019.github.io/org/html/index.org" '(:crossrefs (((other "Second" "Semester") . 6133345) ((headline "Second" "Semester") . 6133345) ((other "First" "Semester") . 232815700) ((headline "First" "Semester") . 232815700)) :index nil) org-publish-cache)
-(puthash "X3568fdddc5612eeeaaff775c1afdbe818f520227" 1569771117 org-publish-cache)
+(puthash "X3568fdddc5612eeeaaff775c1afdbe818f520227" 1572228353 org-publish-cache)

@@ -16,7 +16,7 @@ Faculty Sponsor: Dr. Marius Silaghi
 * First Semester
 | Plan(Sep4)           | [[https:/pdf/plan1.pdf][Plan]], [[https:/presentation/plan1.pdf][Presentation]]                                           |
 | Milestone 1 (Sep 30) | [[https:/pdf/requirement.pdf][Requirement]], [[https:/pdf/design.pdf][Design]], [[https:/pdf/test.pdf][Test]], [[https:/presentation/milestone1.pdf][Presentation]], [[https:/pdf/milestone1.pdf][Progress Evaluation]] |
-| Milestone 2 (Oct 28) | Presentation, Progress Evaluation                            |
+| Milestone 2 (Oct 28) | [[https:/presentation/milestone2.pdf][Presentation]], [[https:pdf/milestone2.pdf][Progress Evaluation]]                            |
 | Milestone 3 (Nov 25) | Presentation, Progress Evaluation                            |
 * Second Semester
 | Plan (Jan 22)        | Plan, Presentation                                         |
