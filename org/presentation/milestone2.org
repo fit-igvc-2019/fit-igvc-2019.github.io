@@ -1,4 +1,4 @@
-#+TITLE: IGVC Milestone 1
+#+TITLE: IGVC Milestone 2
 
 * Implement lane detection
 Using image processing technique, find the lane that the robot must follow.
