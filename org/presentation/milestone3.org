@@ -1,0 +1,44 @@
+#+TITLE: IGVC Milestone 3
+
+* Implement mapping
+Mapping is an essential feature of the robot.
+
+The robot need to remember details about the lane, the obstacles and the
+waypoint in order to find a path.
+[[../../static/milestone3-lane-detection.png]]
+* Implement mapping: Data structure
+The module uses a numpy matrix to represent the map. As a result, the map use
+the left-handed Cartesian coordinate system.
+[[../../static/milestone3-cartesian.jpg]]
+
+* Implement mapping: Expandable
+In order to expand the map, the modules will copy the old map into a larger
+matrix and may change the origin point may be changed depending on the direction
+of the expansion
+[[../../static/milestone3-extension.png]]
+* Implement mapping: Mapping the lane and the obstacles (1 of 3)
+The modules will receive a list of coordinates of objects that can obstruct the
+robot movement. It will apply the information into the map using matrix
+transformation (scaling, rotating).
+* Implement mapping: Mapping the lane and the obstacles (1 of 3)
+First, we will assume that the robot is in its initial configuration (Stay at
+the origin point, align with the vertical axis). The coordinates will be fitted
+into the robot field of view.
+[[../../static/milestone3-fov-assume.png]]
+* Implement mapping: Mapping the lane and the obstacles (1 of 3)
+Then, the modules will transform the coordinates to match the robot current
+position.
+[[../../static/milestone3-fov-true.png]]
+
+* Test mapping
+Mapping module is currently tested using only unit testing.
+
+After recording accurate parameter for practical uses, the team will test the
+module integration with other systems in the robot.
+* Next milestone
+- Implement and test obstacle detection
+  - Access the robot camera and find the appropriate mode for finding the
+    obstacle
+- Measuring the robot field of view in order to adjust the programs'
+  configuration variable
+* Questions?

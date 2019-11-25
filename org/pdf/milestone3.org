@@ -1,0 +1,82 @@
+#+TITLE: Milestone 3 Progress Evaluation
+
+* General Information
+1. Project Name: IGVC - Intelligent Ground Vehicle Competition
+2. Team members:
+   - Viet Dung Nguyen (CSE) ([[mailto:dnguyen2016@my.fit.edu][dnguyen2016@my.fit.edu]])
+   - Jinwen Zhang ([[mailto:jzhang2015@my.fit.edu][jzhang2015@my.fit.edu]])
+   - John Light ([[mailto:jlight2016@my.fit.edu][jlight2016@my.fit.edu]])
+   - Sijin Yang ([[mailto:yangs2017@my.fit.edu][yangs2017@my.fit.edu]])
+   - Peter Tarsoly ([[mailto:ptarsoly2016@my.fit.edu][ptarsoly2016@my.fit.edu]])
+3. Faculty Sponsor: Dr. Marius Silaghi ([[mailto:msilaghi@fit.edu][msilaghi@fit.edu]])
+4. Client: Dr. Ken Gibbs
+5. Meetings with the Client:
+   - 10/25/2019
+   - 11/01/2019
+   - 11/08/2019
+   - 11/22/2019
+6. Date of meeting faculty sponsor:
+   - 11/25/2019
+
+* Task matrix
+| Task                     | Completion % | Viet Dung | To do                                      |
+|--------------------------+--------------+-----------+--------------------------------------------|
+| Implement mapping        |          100 |       100 | None                                       |
+| Test mapping             |           80 |        80 | Require integration testing                |
+* Task Discussion:
+** Implement mapping:
+The team use a Numpy matrix in order to represent the map. In order to get
+the coordinates consistent with the matrix representation, the map used a
+left-handed Cartesian coordinate system.
+
+Because the dimensions of the field and the original position of the robot are
+unknown, the map must be expandable. When expanding the map, the old matrix will
+be copied into a larger matrix and the origin point of the coordinate system
+might be changed depending on the direction of expansion.
+
+The map will keep track of the robot's position by receiving information about
+the angle and distance that the robot travel. The robot data structure contains
+information about its position and its angle relative to the vertical axis of
+the map.
+
+The map subsystem will receive the coordinates of the lane and the obstacles
+relative to the robot from the detection subsystems. Using matrix
+transformation, the module will calculate the absolute coordinates and
+apply them to the map
+** Test mapping:
+The team will use unit testing in order to test the map. Specifically, we will
+test these functions: tracking the robot, mapping the obstacles, mapping the
+lane, and extending its size.
+
+After completing other functions of the robot, the team will proceed with
+integration testing and system testing.
+* Contribution Discussion:
+- Viet Dung Nguyen
+  + Writing the map and the robot representation data structure
+  + Writing the coordinates transformation matrix
+  + Writing test script
+* Plan for next milestone:
+- Implement and test obstacle detection
+  - Access the robot camera and find the appropriate mode for finding the obstacle
+  - The robot must have the obstacle detection capacity in order to avoid the
+    obstacles on the track.
+- Measuring the robot field of view in order to adjust the programs'
+  configuration variable
+  - Currently, the parameters for the software modules (lane detection, mapping)
+    are experimental. More information about the robot camera is required in
+    order to set the accurate configuration.
+\newpage
+* Faculty Sponsor feedback on each task for the current milestone:
+- Task 1
+  \vspace{2.5cm}
+- Task 2
+  \vspace{3.5cm}
+\par\noindent\makebox[2.5in]{\hrulefill} \hfill\makebox[2.0in]{\hrulefill}
+\par\noindent\makebox[2.5in][l]{Signature}      \hfill\makebox[2.0in][l]{Date}
+\newpage
+* Faculty Sponsor evaluation:
+| Viet Dung Nguyen | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
+
+\vspace{1.5cm}
+\par\noindent\makebox[2.5in]{\hrulefill} \hfill\makebox[2.0in]{\hrulefill}
+\par\noindent\makebox[2.5in][l]{Signature}      \hfill\makebox[2.0in][l]{Date}
