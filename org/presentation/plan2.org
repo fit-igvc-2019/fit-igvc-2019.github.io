@@ -1,0 +1,51 @@
+#+TITLE: IGVC Project Plan
+* General Information
+1. Project Name: IGVC - Intelligent Ground Vehicle Competition
+2. Team members:
+   - Viet Dung Nguyen (CSE) ([[mailto:dnguyen2016@my.fit.edu][dnguyen2016@my.fit.edu]])
+   - Jinwen Zhang ([[mailto:jzhang2015@my.fit.edu][jzhang2015@my.fit.edu]])
+   - John Light ([[mailto:jlight2016@my.fit.edu][jlight2016@my.fit.edu]])
+   - Sijin Yang ([[mailto:yangs2017@my.fit.edu][yangs2017@my.fit.edu]])
+   - Peter Tarsoly ([[mailto:ptarsoly2016@my.fit.edu][ptarsoly2016@my.fit.edu]])
+3. Faculty Sponsor: Dr. Marius Silaghi
+4. Client: Dr. Ken Gibbs
+5. Meetings with the Client:
+* Goal and Motivation
+The goal of the project is to build an unmanned autonomous robot to compete in
+IGVC in Michigan. The objective of the competition is to have the robot complete
+an outdoor obstacle course under a prescribe time within the speed limit of 1-5
+mph while remaining on the lane and avoiding obstacles.
+* Approach:
+The key features of the software components are:
+- Lane detection
+- Obstacle detection and avoidance
+- Mapping
+- Motion planning
+* Progress Summary:
+#+LATEX: \small
+| Task                                |  % | To do                       |
+|-------------------------------------+----+-----------------------------|
+| Examine options for motion planning | 50 | Decide the algorithm        |
+| Implement and test lane detection   | 80 | Improve the accuracy        |
+| Implement and test mapping          | 80 | Require integration testing |
+
+* Design
+  #+ATTR_LATEX: :width 5cm
+[[../../static/design-diagram.png]]
+* Technical Challenges:
+- Team members have no experience with creating 3D environment in order to creat
+  software simulation
+- We need to decide on motion planning algorithm
+- We need to find a way to detect obstacle
+* Milestone 4:
+- Creating an emulation environment to test the software
+- Test the software using the emulation
+* Milestone 5:
+- Implement obstacle detection and motion planning
+- Create poster for Senior design showcase
+* Milestone 6:
+- Test/demo of the entire system
+- Evaluation results
+- Create user manual
+- Create demo video
+* Questions?
