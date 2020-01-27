@@ -41,7 +41,8 @@ The key features of the software components are:
 - Creating an emulation environment to test the software
 - Test the software using the emulation
 * Milestone 5:
-- Implement obstacle detection and motion planning
+- Implement and test obstacle detection
+- Implement and test motion planning
 - Create poster for Senior design showcase
 * Milestone 6:
 - Test/demo of the entire system
