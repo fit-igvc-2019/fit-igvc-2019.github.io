@@ -1,0 +1,91 @@
+#+TITLE: Milestone 4 Progress Evaluation
+
+1. Project Name: IGVC - Intelligent Ground Vehicle Competition
+2. Team members:
+   - Viet Dung Nguyen (CSE) ([[mailto:dnguyen2016@my.fit.edu][dnguyen2016@my.fit.edu]])
+   - Jinwen Zhang ([[mailto:jzhang2015@my.fit.edu][jzhang2015@my.fit.edu]])
+   - John Light ([[mailto:jlight2016@my.fit.edu][jlight2016@my.fit.edu]])
+   - Sijin Yang ([[mailto:yangs2017@my.fit.edu][yangs2017@my.fit.edu]])
+   - Peter Tarsoly ([[mailto:ptarsoly2016@my.fit.edu][ptarsoly2016@my.fit.edu]])
+3. Faculty Sponsor: Dr. Marius Silaghi ([[mailto:msilaghi@fit.edu][msilaghi@fit.edu]])
+4. Client: Dr. Ken Gibbs
+5. Meetings with the Client:
+   - 01/31/2020
+   - 02/07/2020
+   - 02/14/2020
+6. Date of meeting faculty sponsor:
+   - 02/17/2020
+* Task matrix:
+#+LATEX: \small
+| Task                         | Completion % | Viet Dung | To do                         |
+|------------------------------+--------------+-----------+-------------------------------|
+| Rewrite codes into ROS nodes |          100 |       100 |                               |
+| Build the Gazebo simulation  |           90 |        90 | Set obstacle, improve the map |
+| Test the simulation          |          100 |       100 |                               |
+* Task Discussion:
+** Rewrite codes into ROS nodes:
+ROS (Robot Operating System) is a set of tools and libraries for making robot
+applications.
+
+Different components in the robot system will communicate with each other using
+ROS message and service systems. Using the =rospy= library, we rewrite the
+existing Python codes into ROS nodes by using ROS Subscriber and Publisher as
+input and output.
+#+ATTR_LATEX: :width 18cm
+[[../../static/rosgraph.png]]
+** Build the Gazebo simulation:
+Gazebo is an application used for robot simulation. Using Gazebo, we can test
+the robot specification. Gazebo also comes with a plugin simulating the output
+of a depth camera and publish the image to ROS nodes.
+
+The simulation includes the models for the robot and a map using 2d image as
+texture on plain surface. In order to move the robot, we wrote a plugin to
+control the robot joints.
+** Test the simulation:
+The Ros nodes will subscribe to the topic published by Gazebo. In testing, each
+Ros nodes will display its output in order to test the software.
+
+The lane detection node will find the white lines drawn on the map and published
+the filtered image to the mapping node.
+
+The mapping node will receive the image from the lane detection. It will get the
+robot's position using Gazebo existing ROS services =get_model_state= and
+calculate the robot's orientation on the 2D plane from the Gazebo quarternions
+orientation (x, y, z, w)
+#+ATTR_LATEX: :width 18cm
+[[../../static/gazebo_simulation.png]]
+
+* Contribution discussion:
+- Viet Dung Nguyen
+  + Improve the Gazebo models, correct the coordinates of the robot model's
+    components.
+  + Draw the map for the simulation.
+  + Write the Gazebo plugin to move the robot.
+  + Rewrite the lane detection and mapping modules into ROS nodes.
+  + Testing the simulation. Verify that the nodes are working as intended.
+  + Write the documentation. Describe the process for building and testing the
+    project.
+* Plan for the next milestone:
+- Implement motion planning.
+  - Using the map, find the way from the robot current position to the next
+    waypoint.
+  - Plan the robot motion, calculate the speed of the robot joints in order to
+    control the robot movement.
+- Create poster for Senior design showcase.
+  \newpage
+* Faculty Sponsor feedback on each task for the current milestone:
+- Task 1
+  \vspace{2.5cm}
+- Task 2
+  \vspace{2.5cm}
+- Task 3
+  \vspace{3.5cm}
+\par\noindent\makebox[2.5in]{\hrulefill} \hfill\makebox[2.0in]{\hrulefill}
+\par\noindent\makebox[2.5in][l]{Signature}      \hfill\makebox[2.0in][l]{Date}
+\newpage
+* Faculty Sponsor evaluation:
+| Viet Dung Nguyen | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
+
+\vspace{1.5cm}
+\par\noindent\makebox[2.5in]{\hrulefill} \hfill\makebox[2.0in]{\hrulefill}
+\par\noindent\makebox[2.5in][l]{Signature}      \hfill\makebox[2.0in][l]{Date}

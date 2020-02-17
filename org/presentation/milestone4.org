@@ -1,0 +1,61 @@
+#+TITLE: IGVC Milestone 4
+
+* Task matrix:
+#+LATEX: \small
+| Task                         | Completion % |
+|------------------------------+--------------|
+| Rewrite codes into ROS nodes |          100 |
+| Build the Gazebo simulation  |           90 |
+| Test the simulation          |          100 |
+
+* Rewrite codes into ROS nodes:
+ROS (Robot Operating System) is a set of tools and libraries for making robot
+applications.
+
+Different components in the robot system will communicate with each other using
+ROS message and service systems. Using the =rospy= library, we rewrite the
+existing Python codes into ROS nodes by using ROS Subscriber and Publisher as
+input and output.
+
+#+ATTR_LATEX: :width 10cm
+[[../../static/rosgraph.png]]
+* Build the Gazebo simulation:
+Gazebo is an application used for robot simulation. Using Gazebo, we can test
+the robot specification. Gazebo also comes with a plugin simulating the output
+of a depth camera and publish the image to ROS nodes.
+
+The simulation includes the models for the robot and a map using 2d image as
+texture on plain surface. In order to move the robot, we wrote a plugin to
+control the robot joints.
+* Test the simulation:
+The Ros nodes will subscribe to the topic published by Gazebo. In testing, each
+Ros nodes will display its output in order to test the software.
+
+The lane detection node will find the white lines drawn on the map and published
+the filtered image to the mapping node.
+
+The mapping node will receive the image from the lane detection. It will get the
+robot's position using Gazebo existing ROS services =get_model_state= and
+calculate the robot's orientation on the 2D plane from the Gazebo quarternions
+orientation (x, y, z, w)
+* Test the simulation:
+#+ATTR_LATEX: :width 11cm
+[[../../static/gazebo_simulation.png]]
+* Contribution discussion:
+- Viet Dung Nguyen
+  + Improve the Gazebo models, correct the coordinates of the robot model's
+    components.
+  + Draw the map for the simulation.
+  + Write the Gazebo plugin to move the robot.
+  + Rewrite the lane detection and mapping modules into ROS nodes.
+  + Testing the simulation. Verify that the nodes are working as intended.
+  + Write the documentation. Describe the process for building and testing the
+    project.
+* Plan for the next milestone:
+- Implement motion planning.
+  - Using the map, find the way from the robot current position to the next
+    waypoint.
+  - Plan the robot motion, calculate the speed of the robot joints in order to
+    control the robot movement.
+- Create poster for Senior design showcase.
+* Questions?
