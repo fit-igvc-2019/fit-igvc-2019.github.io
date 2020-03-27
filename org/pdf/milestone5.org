@@ -14,6 +14,7 @@
    - 02/28/2020
    - 03/06/2020
 6. Date of meeting faculty sponsor:
+   - 03/27/2020
 
 * Task matrix:
 #+LATEX: \small
