@@ -1,0 +1,91 @@
+#+TITLE: Milestone 5
+
+1. Project Name: IGVC - Intelligent Ground Vehicle Competition
+2. Team members:
+   - Viet Dung Nguyen (CSE) ([[mailto:dnguyen2016@my.fit.edu][dnguyen2016@my.fit.edu]])
+   - Jinwen Zhang ([[mailto:jzhang2015@my.fit.edu][jzhang2015@my.fit.edu]])
+   - John Light ([[mailto:jlight2016@my.fit.edu][jlight2016@my.fit.edu]])
+   - Sijin Yang ([[mailto:yangs2017@my.fit.edu][yangs2017@my.fit.edu]])
+   - Peter Tarsoly ([[mailto:ptarsoly2016@my.fit.edu][ptarsoly2016@my.fit.edu]])
+3. Faculty Sponsor: Dr. Marius Silaghi ([[mailto:msilaghi@fit.edu][msilaghi@fit.edu]])
+4. Client: Dr. Ken Gibbs
+5. Meetings with the Client:
+   - 02/21/2020
+   - 02/28/2020
+   - 03/06/2020
+6. Date of meeting faculty sponsor:
+
+* Task matrix:
+#+LATEX: \small
+| Task                       | Completion % | Viet Dung | To do                |
+|----------------------------+--------------+-----------+----------------------|
+| Software Documentation     |           80 |        80 | Code standard,       |
+|                            |              |           | development process  |
+| Improving the simulation   |           50 |        50 | Refactoring the code |
+| Control the robot movement |          100 |       100 |                      |
+
+* Task Discussion:
+** Change of plan:
+Because of the situation with the Coronavirus, the team could physically access
+the robot. As a result, the team decided to focus more on documentation and
+simulation. In addition, the team will change the main priority from building
+the robot to developing software functions.
+
+** Documentation:
+Currently, the documentation of the project includes instructions for running
+and building the simulation and study resources used during the process of the
+project.
+
+The main document of the repository listed the dependencies and how to use the
+makefile script to build and run the simulation.
+
+The resource document listed all reference sources for the project. Major
+changes to the processes in the guides were noted.
+
+** Improving the simulation:
+In the last milestone, all new ROS nodes were unstable and needed to run
+separately. After the source code became more stable, it is necessary to launch
+all ROS nodes simultaneously for integration test and developing new nodes.
+
+Using =roslaunch= to manage multiple ROS nodes and other parameters within ROS.
+Makefile was used to setup environment and simplify the process of executing the
+program.
+
+** Control the robot movement:
+The robot movement are control primarily using the two rear wheels. The robot
+turn by applying different velocity to the two rear wheel.
+
+In order to control the robot's movement within the simulation, the plugin
+controling the joints will receive a custom ROS message type which allow varied
+speed between wheel.
+
+* Contribution discussion:
+- Viet Dung Nguyen
+  + Write the document for the simulator.
+  + Streamline the process for building and running the simulator.
+  + Update the plugin, which allow the varied speed between the robot's rear wheels.
+  + Consult about the implementation of other members work into the simulation.
+* Plan for the next milestone:
+- Complete the documentation.
+  - Add coding standards and development instruction.
+- Refactor the code.
+- Assist other members to implement other key modules like obstacle detection
+  and path planning.
+
+  \newpage
+* Faculty Sponsor feedback on each task for the current milestone:
+- Task 1
+  \vspace{2.5cm}
+- Task 2
+  \vspace{2.5cm}
+- Task 3
+  \vspace{3.5cm}
+\par\noindent\makebox[2.5in]{\hrulefill} \hfill\makebox[2.0in]{\hrulefill}
+\par\noindent\makebox[2.5in][l]{Signature}      \hfill\makebox[2.0in][l]{Date}
+\newpage
+* Faculty Sponsor evaluation:
+| Viet Dung Nguyen | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
+
+\vspace{1.5cm}
+\par\noindent\makebox[2.5in]{\hrulefill} \hfill\makebox[2.0in]{\hrulefill}
+\par\noindent\makebox[2.5in][l]{Signature}      \hfill\makebox[2.0in][l]{Date}
