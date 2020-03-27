@@ -21,5 +21,5 @@ Faculty Sponsor: Dr. Marius Silaghi
 * Second Semester
 | Plan (Jan 22)        | [[https:/pdf/plan2.pdf][Plan]], [[https:/presentation/plan2.pdf][Presentation]]                                                                  |
 | Milestone 4 (Feb 17) | [[https:/presentation/milestone4.pdf][Presentation]] ([[https://youtu.be/2YUM7COqVp8][Demo]]), [[https:pdf/milestone4.pdf][Progress Evaluation]] |
-| Milestone 5 (Mar 23) | [[https:/presentation/milestone5.pdf][Presentation]], Progress Evaluation                                                                        |
+| Milestone 5 (Mar 23) | [[https:/presentation/milestone5.pdf][Presentation]], [[https:pdf/milestone5.pdf][Progress Evaluation]]                                          |
 | Milestone 6 (Apr 20) | User Manual, Demo Video, Presentation, Progress Evaluation                                                                                       |
