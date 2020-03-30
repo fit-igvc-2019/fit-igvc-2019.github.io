@@ -1,0 +1,48 @@
+#+TITLE: IGVC Milestone 5
+
+* Task matrix:
+#+LATEX: \small
+| Task                         | Completion % |
+|------------------------------+--------------|
+| Software Documentation       |           80 |
+| Improving the simulation     |           50 |
+| Control the robot movement   |          100 |
+
+* Change of plan:
+- Because of the situation with the Coronavirus, the team could physically
+  access the robot.
+- Focus more on documentation and simulation.
+- Prioritize software development over hardware
+
+* Documentation:
+- Instruction :: instruction for building and running the simulation.
+- Resources :: A list of reference material for learning and editting the
+  project.
+  - Included adjustments apply to the material
+
+* Improve experience for running and building software:
+- Create a ROS launch file, which run multiple ROS nodes at the same time.
+- Include a makefile to setup environment, build and run the project.
+
+* Control the robot movement:
+- The robot moves and turns by adjusting the speed of two rear wheels.
+- Create a custom ROS message to provide interface for controlling the robot
+  movement.
+- Currently used to manually control the robot.
+- When the motion planning module can be integrate, the robot's movement can be automated.
+
+* Contribution discussion:
+- Viet Dung Nguyen
+  + Write the document for the simulator.
+  + Streamline the process for building and running the simulator.
+  + Update the plugin, which provided interface for movement control.
+  + Consult about the implementation of other members work into the simulation.
+* Plan for the next milestone:
+- Improve the documentation:
+  - Included coding standard and practice for editting the project.
+- Refactor the code:
+  - Modularize the path filtering in order to hotswap filters.
+  - Changing the parameters of the mapping module with a config file or
+    environment variables.
+- Assist other members with including their works into the simulation.
+* Questions?
