@@ -1,0 +1,86 @@
+#+TITLE: Milestone 6
+
+1. Project Name: IGVC - Intelligent Ground Vehicle Competition
+2. Team members:
+   - Viet Dung Nguyen (CSE) ([[mailto:dnguyen2016@my.fit.edu][dnguyen2016@my.fit.edu]])
+   - Jinwen Zhang ([[mailto:jzhang2015@my.fit.edu][jzhang2015@my.fit.edu]])
+   - John Light ([[mailto:jlight2016@my.fit.edu][jlight2016@my.fit.edu]])
+   - Sijin Yang ([[mailto:yangs2017@my.fit.edu][yangs2017@my.fit.edu]])
+   - Peter Tarsoly ([[mailto:ptarsoly2016@my.fit.edu][ptarsoly2016@my.fit.edu]])
+3. Faculty Sponsor: Dr. Marius Silaghi ([[mailto:msilaghi@fit.edu][msilaghi@fit.edu]])
+4. Client: Dr. Ken Gibbs
+5. Meetings with the Client:
+   - 03/27/2020
+   - 04/03/2020
+   - 04/10/2020
+6. Date of meeting faculty sponsor:
+
+* Task matrix:
+#+LATEX: \small
+| Task                            | Completion % | Viet Dung |
+|---------------------------------+--------------+-----------|
+| Assist other member with        |          100 |       100 |
+| simulation                      |              |           |
+|                                 |              |           |
+| Refactor the code               |          100 |       100 |
+| Add obstacles to the simulation |          100 |       100 |
+
+* Task Discussion:
+
+** Assist other member with the simulation:
+After examining the simulation with other members, the team found that the
+build script for the simulation require adjustments for different Linux distros.
+
+Because the software was written using Python3 instead of Python2 with ROS 1,
+the default =catkin_make= command required the user to specify the location of
+Python3 installation, which are different between Linux distros.
+
+** Refactor the code:
+After re-examining the code, the team made several improvement to the code
+quality, effectiveness, and structure.
+
+The algorithm for mapping was improved. Previously, the software extracted the
+coordinates of the obstacles from the image first, then apply transformation
+algorithm on the list of coordinates before applying the information into the
+map. Now, the software first shrink and rotate the image first before extracting the
+obstacles coordinates. This method was more accurate.
+
+The code are more modular. Image transformation functions was extracted to a
+different module. More object classes were used to separate the responsibility.
+
+
+** Adding obstacles:
+A new Gazebo model for obstacle was created in order to test obstacle detection
+in the future
+
+* Contribution discussion:
+- Viet Dung Nguyen
+  + Redesign the map
+  + Add obstacle models
+  + Improve the Makefile
+  + Improve the mapping algorithm
+* Lessons learned:
+- Learn how to use ROS
+  - Writing publisher, subscriber and custom ROS msg and service
+- Learn how to use Gazebo for simulation:
+  - Design models using specification document
+  - Writing plugins for controlling robot
+- Learn more about image filtering and mapping
+
+  \newpage
+* Faculty Sponsor feedback on each task for the current milestone:
+- Task 1
+  \vspace{2.5cm}
+- Task 2
+  \vspace{2.5cm}
+- Task 3
+  \vspace{3.5cm}
+\par\noindent\makebox[2.5in]{\hrulefill} \hfill\makebox[2.0in]{\hrulefill}
+\par\noindent\makebox[2.5in][l]{Signature}      \hfill\makebox[2.0in][l]{Date}
+\newpage
+* Faculty Sponsor evaluation:
+| Viet Dung Nguyen | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
+
+\vspace{1.5cm}
+\par\noindent\makebox[2.5in]{\hrulefill} \hfill\makebox[2.0in]{\hrulefill}
+\par\noindent\makebox[2.5in][l]{Signature}      \hfill\makebox[2.0in][l]{Date}
