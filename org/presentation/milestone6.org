@@ -17,6 +17,7 @@
 - When using ROS1 with Python3, the users must specify the location of Python 3.
   - Different between distros.
 
+* Task Discussion:
 ** Refactor the code:
 - Improve the mapping function.
   - Previous method:
