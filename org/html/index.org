@@ -19,7 +19,7 @@ Faculty Sponsor: Dr. Marius Silaghi
 | Milestone 2 (Oct 28) | [[https:/presentation/milestone2.pdf][Presentation]], [[https:pdf/milestone2.pdf][Progress Evaluation]]                            |
 | Milestone 3 (Nov 25) | [[https:/presentation/milestone3.pdf][Presentation]], [[https:pdf/milestone3.pdf][Progress Evaluation]]                            |
 * Second Semester
-| Plan (Jan 22)        | [[https:/pdf/plan2.pdf][Plan]], [[https:/presentation/plan2.pdf][Presentation]]                                                                  |
-| Milestone 4 (Feb 17) | [[https:/presentation/milestone4.pdf][Presentation]] ([[https://youtu.be/2YUM7COqVp8][Demo]]), [[https:pdf/milestone4.pdf][Progress Evaluation]] |
-| Milestone 5 (Mar 23) | [[https:/presentation/milestone5.pdf][Presentation]], [[https:pdf/milestone5.pdf][Progress Evaluation]]                                          |
-| Milestone 6 (Apr 20) | User Manual, Demo Video, Presentation, Progress Evaluation                                                                                       |
+| Plan (Jan 22)        | [[https:/pdf/plan2.pdf][Plan]], [[https:/presentation/plan2.pdf][Presentation]]                                                                                                          |
+| Milestone 4 (Feb 17) | [[https:/presentation/milestone4.pdf][Presentation]] ([[https://youtu.be/2YUM7COqVp8][Demo]]), [[https:pdf/milestone4.pdf][Progress Evaluation]]                                         |
+| Milestone 5 (Mar 23) | [[https:/static/poster.pdf][Poster]], [[https:/static/e-book.pdf][e-book page]], [[https:/presentation/milestone5.pdf][Presentation]], [[https:pdf/milestone5.pdf][Progress Evaluation]] |
+| Milestone 6 (Apr 20) | User Manual, [[https://youtu.be/E4lF6phMgAI][Demo Video]], [[https:/presentation/milestone6.pdf][Presentation]], [[https:/pdf/milestone6.pdf][Progress Evaluation]]                                                        |

@@ -1,0 +1,45 @@
+#+TITLE: IGVC Milestone 6
+
+* Task matrix:
+#+LATEX: \small
+| Task                            | Completion % | Viet Dung |
+|---------------------------------+--------------+-----------|
+| Assist other member with        |          100 |       100 |
+| simulation                      |              |           |
+|                                 |              |           |
+| Refactor the code               |          100 |       100 |
+| Add obstacles to the simulation |          100 |       100 |
+
+* Task Discussion:
+
+** Assist other member with the simulation:
+- Adjust the build script for different Linux distros.
+- When using ROS1 with Python3, the users must specify the location of Python 3.
+  - Different between distros.
+
+** Refactor the code:
+- Improve the mapping function.
+  - Previous method:
+    - Extract the list of coordinates of objects (obstacle, lane)
+    - Perform rotation and scaling on the list using transformation matrices.
+  - Current method:
+    - Perform rotation and scaling on the image using OpenCV provided methods.
+    - Extract the coordinates
+
+** Adding obstacles:
+- Add the model for obstacle and place obstacles on simulation.
+
+* Contribution discussion:
+- Viet Dung Nguyen
+  + Contact with other members to improve the software
+  + Improve the mapping function
+  + Create the model for obstacle
+  + Change the map.
+* Lessons learned:
+- Learn how to use ROS
+  - Writing publisher, subscriber and custom ROS msg and service
+- Learn how to use Gazebo for simulation:
+  - Design models using specification document
+  - Writing plugins for controlling robot
+- Learn more about image filtering and mapping
+* Questions?
